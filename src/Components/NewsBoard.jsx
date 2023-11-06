@@ -14,6 +14,7 @@ export const NewsBoard = () => {
   return (
     <div>
       <h2 className='text-center'>Latest <span className='badge bg-danger'>News</span></h2>
+      <p className="fw-bold"> Here is Our <span className="text-indigo-400">Top</span> Highlights</p>
       {articles.map((news,index)=>{
         return <NewsItem key={index} 
         title={news.title} 

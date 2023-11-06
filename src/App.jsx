@@ -1,11 +1,14 @@
 
 import './App.css'
+import Navbar from './Components/Navbar'
+import { NewsBoard } from './Components/NewsBoard'
 
 function App() {
 
   return (
     <>
-      <button className="btn btn-primary">bootstraped</button>
+     <Navbar/>
+     <NewsBoard/>
     </>
   )
 }

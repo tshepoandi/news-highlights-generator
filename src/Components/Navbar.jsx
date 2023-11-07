@@ -18,6 +18,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import { Link } from 'react-router-dom';
 
 const drawerWidth = 240;
 
@@ -78,6 +79,19 @@ export default function Navbar() {
     setOpen(false);
   };
 
+  const links = [{
+    linkName:'General',linkUrl: "/"
+  },{
+    linkName:"Business",linkUrl: "/business"
+  },
+    {linkName:"Entertainment",linkUrl:"/entertainment"
+    },
+    {linkName:"Technology",linkUrl:"/technology"
+    },
+    {linkName:"Science",linkUrl:"/science"}
+  ] 
+  // ['General','Business', 'Entertainment', 'Technology', 'Science']
+
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
@@ -117,10 +131,10 @@ export default function Navbar() {
         </DrawerHeader>
         <Divider />
         <List>
-          {['General','Business', 'Entertainment', 'Technology', 'Science'].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemText primary={text} />
+          {links.map((link, index) => (
+            <ListItem key={link.linkName} disablePadding>
+              <ListItemButton component={Link} to={link.linkUrl}>
+                <ListItemText primary={link.linkName} />
               </ListItemButton>
             </ListItem>
           ))}

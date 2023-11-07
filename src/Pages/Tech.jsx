@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { NewsItem } from "../Components/NewsItem";
 
 
-export const Technology = () => {
+const Technology = () => {
   const [articles,setArticles] = useState([]);
 
    useEffect(()=>{
@@ -28,3 +28,5 @@ export const Technology = () => {
     </div>
   )
 }
+
+export default Technology

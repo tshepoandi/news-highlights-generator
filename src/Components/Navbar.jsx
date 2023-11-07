@@ -80,7 +80,7 @@ export default function Navbar() {
   };
 
   const links = [{
-    linkName:'General',linkUrl: "/"
+    linkName:'General',linkUrl: "/general"
   },{
     linkName:"Business",linkUrl: "/business"
   },

@@ -87,8 +87,7 @@ export default function Navbar() {
     {linkName:"Entertainment",linkUrl:"/entertainment"
     },
     {linkName:"Technology",linkUrl:"/technology"
-    },
-    {linkName:"Science",linkUrl:"/science"}
+    }
   ] 
   // ['General','Business', 'Entertainment', 'Technology', 'Science']
 

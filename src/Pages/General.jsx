@@ -7,7 +7,7 @@ const General = () => {
   const [articles,setArticles] = useState([]);
     console.log(useParams())
    useEffect(()=>{
-   let url = `https://newsapi.org/v2/top-headlines?category=general&apiKey=${import.meta.env.VITE_API_KEY}`
+   let url = `https://newsapi.org/v2/top-headlines?category=general&apiKey=3e7cffa2867b40c5be3720dcaae42198`
    fetch(url)
    .then(response => response.json())
    .then(data=>setArticles(data.articles))
